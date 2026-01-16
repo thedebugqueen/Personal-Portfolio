@@ -4,110 +4,100 @@ Bu rehber, kod yazmayı hiç bilmeseniz bile sitenizi nasıl değiştireceğiniz
 
 ---
 
-## 📂 1. İsim ve Unvan Değiştirme
-**Dosya:** `index.html`
+## 🎨 AŞIRI DETAYLI TASARIM REHBERİ
 
-- **İsim (Büyük Başlık):**
-  - **Klavye Kısayolu:** `CTRL + F` tuşuna basın ve `YENİ ADINIZ` diye aratın (veya 76. satıra gidin).
-  - `Your Name` yazısını silip kendi adınızı yazın.
-  
-- **Sayfa Başlığı (Tarayıcı Sekmesi):**
-  - Kodun en tepesinde, 9. satırdaki `<title>` etiketini bulun.
-  - `Your Name | Creative Portfolio` kısmını kendinize göre değiştirin.
+Sitenin **TÜM** renklerini, yazı tiplerini ve efektlerini `style.css` dosyasından yönetiyoruz.
 
----
+### 1. Renkleri Değiştirme (CSS Değişkenleri)
+**Dosya:** `style.css` (Satır 9-33 arası)
 
-## 📝 2. "Hakkımda" Yazısını Değiştirme
-**Dosya:** `index.html`
-
-- **118. satıra** gidin.
-- `<p>` ile `</p>` arasındaki İngilizce metni silin.
-- Kendi hikayenizi, nerede okuduğunuzu ve hedeflerinizi yazın.
-> **İpucu:** Yazılarınızın paragraflara bölünmesini isterseniz, her yeni paragraf için yeni bir `<p> Yazı... </p>` bloğu açabilirsiniz.
-
----
-
-## 🎨 3. Renkleri Değiştirme (Çok Kolay!)
-**Dosya:** `style.css`
-
-Sitenin tüm renklerini tek bir yerden yönetiyoruz. 
-- Dosyanın en başına (**20-40. satırlar arasına**) bakın.
-- `:root` yazan bir kısım göreceksiniz. Burada renk kodları var:
+Burada `:root` diye bir yer göreceksiniz. Burası sitenin "Beyni" gibidir.
 
 ```css
 :root {
-    --primary: #2563eb;       /* Ana Renk (Mavi) */
-    --secondary: #1e40af;     /* İkincil Renk (Koyu Mavi) */
-    --accent: #f472b6;        /* Vurgu Rengi (Pembe) */
+    /* ANA RENKLER */
+    --accent: #ff6b9d;        /* Vurgu Rengi (Pembe) - Butonlar, Linkler */
+    --accent-light: #ffb5d0;  /* Açık Vurgu - Arka plan süsleri */
+    --accent-dark: #e84393;   /* Koyu Vurgu - Hover efektleri */
+
+    /* GRADYANLAR (Renk Geçişleri) */
+    --gradient-1: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
 }
 ```
 
-- Beğendiğiniz bir rengin **HEX kodunu** (örneğin `#ff5733`) bulun ve buradaki kodla değiştirin. Tüm sitedeki butonlar ve başlıklar otomatik değişecektir!
+#### 🛠️ Nasıl Değiştirilir?
+1.  **Google'a "Color Picker" yazın** ve beğendiğiniz rengi seçin.
+2.  Size `#` ile başlayan bir kod verecek (Örn: `#00ff00`). Buna **HEX Kodu** denir.
+3.  `style.css` dosyasında değiştirmek istediğiniz rengin karşısındaki kodu silip kendi HEX kodunuzu yapıştırın.
+4.  **Dikkat:** Kodun başındaki `#` işaretini ve sonundaki `;` noktalı virgülü sakın silmeyin!
 
 ---
 
-## 🖼️ 4. Fotoğraf Ekleme
+### 2. Yazı Tiplerini (Fontları) Değiştirme
+**Dosya:** `index.html` ve `style.css`
+
+#### Adım 1: Yeni Fontu Seçin
+1.  **[fonts.google.com](https://fonts.google.com)** adresine gidin.
+2.  Beğendiğiniz bir fonta tıklayın.
+3.  Sağ üstteki **"Get font"** butonuna basın.
+4.  **"Get embed code"** butonuna tıklayın ve `<link href="...">` ile başlayan uzun kodu kopyalayın.
+
+#### Adım 2: Siteye Ekleyin (`index.html`)
+1.  `index.html` dosyasını açın.
+2.  **17-21. satırlar** arasındaki eski font linklerini silin.
+3.  Kopyaladığınız yeni kodu buraya yapıştırın.
+
+#### Adım 3: Siteye Tanıtın (`style.css`)
+1.  `style.css` dosyasında **11-12. satıra** gidin.
+2.  Tırnak içindeki ismi değiştirin. (Google Fonts sayfasında "CSS class" kısmında yazar).
+    *   Örnek: `--font-heading: 'Roboto', sans-serif;`
+
+---
+
+### 3. Yuvarlak Köşeler (Border Radius)
+Sitedeki kartlar ve butonlar ne kadar yuvarlak olsun?
+
+- `style.css` içinde `border-radius` kelimesini aratın (`CTRL + F`).
+- `24px` veya `50px` gibi değerler göreceksiniz.
+- **Daha Keskin:** Değeri küçültün (Örn: `4px`) -> Dikdörtgen olur.
+- **Daha Yuvarlak:** Değeri büyütün (Örn: `99px`) -> Hap şeklinde olur.
+
+---
+
+### 4. Cam Efekti (Glassmorphism)
+Kartların arkasındaki buzlu cam görüntüsünü değiştirmek için:
+
+- `style.css` içinde `glass-bg` satırını bulun (Satır 26).
+- `rgba(255, 255, 255, 0.85)` kısmındaki **0.85** sayısını değiştirin.
+    - **1.0 yaparsanız:** Tamamen beyaz olur (arkası görünmez).
+    - **0.5 yaparsanız:** Çok şeffaf olur (arkası çok net görünür).
+
+---
+
+## 📂 DİĞER ÖZELLEŞTİRMELER
+
+### Bölüm 1: İsim ve Unvan
+**Dosya:** `index.html`
+- **76. Satır:** `Your Name` yerine adınızı yazın.
+- **9. Satır:** Tarayıcı sekmesinde görünen başlığı değiştirin.
+
+### Bölüm 2: "Hakkımda" Yazısı
+**Dosya:** `index.html` (118. Satır)
+- `<p>` etiketleri arasındaki İngilizce metni silip kendi hikayenizi yazın.
+
+### Bölüm 3: Fotoğraf
 **Klasör:** `images`
+- Kendi fotoğrafınızı `profile.png` adıyla bu klasöre kaydederseniz otomatik değişir.
 
-1. Kendi fotoğrafınızı `images` klasörünün içine atın.
-2. Fotoğrafınızın adını `profile.png` yaparsanız, otomatik olarak sitede görünür!
-3. Farklı bir isim kullanacaksanız, `index.html` dosyasında **99. satıra** gidin ve `src="images/profile.png"` kısmını kendi dosya adınızla değiştirin.
+### Bölüm 4: İletişim Bilgileri
+**Dosya:** `index.html` (390. Satır civarı)
+- `mailto:hello@example.com` -> Mail adresiniz.
+- `New York, USA` -> Şehriniz.
+- `href="#"` -> LinkedIn profil linkiniz.
 
----
-
-## 🚀 5. Yetenek Ekleme / Çıkarma
-**Dosya:** `index.html`
-
-- **132. satıra** gidin (`skill-grid` sınıfını bulun).
-- Her yetenek şu şekilde görünür:
-
-```html
-<div class="skill-item">
-    <i data-lucide="code"></i>
-    HTML/CSS
-</div>
-```
-
-- **Yeni Ekleme:** Bu bloğu kopyalayıp altına yapıştırın ve metni değiştirin.
-- **İkon Değiştirme:** `data-lucide="..."` kısmına [Lucide Icons](https://lucide.dev/icons) sitesinden beğendiğiniz bir ikonun adını yazın.
-
----
-
-## 💼 6. Deneyim (İş/Staj) Ekleme
-**Dosya:** `index.html`
-
-- **184. satıra** doğru inin (`timeline` kısmı).
-- Her bir deneyim `timeline-item` kutusudur.
-- **Yeni Ekleme:** `div class="timeline-item"` ile başlayan ve biten bloğu (yaklaşık 10-15 satır) kopyalayıp altına yapıştırın.
-- **Tarih:** `timeline-date` içindeki yılı değiştirin.
-- **Başlık:** `h4` etiketinin içini (Şirket/Pozisyon) değiştirin.
-
----
-
-## 💡 7. Projelerinizi Ekleme
-**Dosya:** `index.html`
-
-- **317. satıra** gidin (`project-grid`).
-- Her proje bir `glass-card project-card` kutusudur.
-- **Resim:** `src="images/project1.png"` kısmına kendi proje resminizi yazın.
-- **Link:** `href="#"` kısımlarına projenin Github linkini ekleyin.
-
----
-
-## 🎓 8. Araştırma/Makale Ekleme (Opsiyonel)
-**Dosya:** `index.html`
-
-- Eğer akademik çalışmalarınız varsa **235. satıra** bakın.
-- Yoksa, bu bölümü tamamen silebilirsiniz (`<section id="research">` etiketiyle başlar).
-
----
-
-## 📞 9. İletişim ve Sosyal Medya
-**Dosya:** `index.html`
-
-- **390 - 425. satırlar** arası: Email, Konum ve LinkedIn bilgileriniz.
-- **460. satır (En Alt):** Footer'daki sosyal medya ikonları. 
-- Link eklemek için `href="#"` içindeki `#` işaretini silip kendi profil linkinizi (örn: `https://linkedin.com/in/adiniz`) yapıştırın.
+### Bölüm 5: Sosyal Medya İkonları
+**Dosya:** `index.html` (En alt kısım - Footer)
+- İkonların linklerini (`href="..."`) kendi profillerinizle değiştirin.
 
 ---
 *İyi eğlenceler!* ✨
