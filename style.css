@@ -1,17 +1,17 @@
 /* 
-   ---------------------------------------------------------
-   DESIGN SYSTEM & THEME
-   ---------------------------------------------------------
-   This section defines the colors and fonts used in your website.
-   You can easily change the "look and feel" by editing these values.
+   ═══════════════════════════════════════════════════════════════
+   TASARIM SİSTEMİ & TEMA
+   ═══════════════════════════════════════════════════════════════
+   Bu bölüm sitenizin renklerini ve yazı tiplerini belirler.
+   Aşağıdaki değerleri değiştirerek sitenin tüm havasını değiştirebilirsiniz.
 */
 
 :root {
-    /* FONTS - We use elegant, modern fonts */
+    /* YAZI TİPLERİ - Modern ve şık yazı tipleri */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
 
-    /* LIGHT THEME COLORS - Soft, feminine, and professional */
+    /* AÇIK TEMA RENKLERİ - Yumuşak ve profesyonel */
     --bg-primary: #fefefe;
     --bg-secondary: #fdf5f7;
     --bg-tertiary: #fff0f5;
@@ -105,9 +105,9 @@ img {
 }
 
 /* 
-   ---------------------------------------------------------
-   ANIMATED BACKGROUND ELEMENTS
-   ---------------------------------------------------------
+   ═══════════════════════════════════════════════════════════════
+   HARAKETLİ ARKA PLAN (BULANIK DAİRELER)
+   ═══════════════════════════════════════════════════════════════
 */
 
 .bg-blur-circle {

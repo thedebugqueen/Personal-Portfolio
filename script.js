@@ -1,13 +1,13 @@
 /* 
    ═══════════════════════════════════════════════════════════════
-   INTERACTIVITY & MAGIC ✨
+   ETKİLEŞİM & SİHİR ✨
    ═══════════════════════════════════════════════════════════════
-   This script handles all the interactive features of your portfolio.
-   Everything is explained with comments so you can understand and modify it!
+   Bu dosya sitenizin hareketli ve canlı olmasını sağlar.
+   Örnek: Tema değiştirme, menü kaydırma, özel mouse imleci vb.
 */
 
 // ─────────────────────────────────────────────────────────────────
-// 1. THEME TOGGLE (Dark / Light Mode)
+// 1. TEMA DEĞİŞTİRME (Koyu / Açık Mod)
 // ─────────────────────────────────────────────────────────────────
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
@@ -36,7 +36,7 @@ function updateIcon(theme) {
 }
 
 // ─────────────────────────────────────────────────────────────────
-// 2. NAVBAR SCROLL EFFECT
+// 2. NAVİGASYON ÇUBUĞU EFEKTİ (Aşağı inince renk değişmesi)
 // ─────────────────────────────────────────────────────────────────
 const navbar = document.getElementById('navbar');
 const scrollTopBtn = document.getElementById('scroll-top');
@@ -66,7 +66,7 @@ scrollTopBtn.addEventListener('click', () => {
 });
 
 // ─────────────────────────────────────────────────────────────────
-// 3. REVEAL ON SCROLL ANIMATION
+// 3. YUKARI KAYDIRMA EFEKTİ (Sayfa inince öğelerin belirmesi)
 // ─────────────────────────────────────────────────────────────────
 const revealElements = document.querySelectorAll('.reveal');
 
@@ -84,7 +84,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach(el => revealObserver.observe(el));
 
 // ─────────────────────────────────────────────────────────────────
-// 4. CUSTOM CURSOR (Premium Effect)
+// 4. ÖZEL MOUSE İMLECİ (Yuvarlak efekt)
 // ─────────────────────────────────────────────────────────────────
 const cursor = document.querySelector('.cursor');
 const cursorDot = document.querySelector('.cursor-dot');
@@ -113,7 +113,7 @@ if (window.innerWidth > 768) {
 }
 
 // ─────────────────────────────────────────────────────────────────
-// 5. SMOOTH SCROLL FOR NAV LINKS
+// 5. YUMUŞAK KAYDIRMA (Linke tıklayınca yavaşça gitmesi)
 // ─────────────────────────────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
