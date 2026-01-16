@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- [CHANGE YOUR TITLE HERE] -->
+    <title>Your Name | Creative Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Creative portfolio showcasing innovative projects and skills in web development, design, and AI.">
+    <meta name="keywords" content="portfolio, web developer, designer, AI, creative">
+
+    <!-- FONTS: Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS: Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS: Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Custom Cursor (Premium Effect) -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Background Blur Circles -->
+    <div class="bg-blur-circle bg-blur-1"></div>
+    <div class="bg-blur-circle bg-blur-2"></div>
+
+    <!-- 
+       ═══════════════════════════════════════════════════════════════
+       NAVIGATION BAR - CENTERED
+       ═══════════════════════════════════════════════════════════════
+    -->
+    <nav id="navbar">
+        <div class="container nav-content nav-centered">
+            <!-- Navigation Links - Centered -->
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+                <i data-lucide="sun" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 
+       ═══════════════════════════════════════════════════════════════
+       HERO SECTION
+       The first thing people see - make it WOW!
+       ═══════════════════════════════════════════════════════════════
+    -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <!-- Greeting Tag -->
+                <span class="hero-greeting">✨ Welcome to my Portfolio</span>
+
+                <!-- [CHANGE YOUR NAME HERE] -->
+                <h1>Hi, I'm <span>Your Name</span></h1>
+
+                <!-- [CHANGE YOUR DESCRIPTION HERE] -->
+                <p class="hero-description">
+                    A creative developer passionate about building beautiful digital experiences.
+                    I transform ideas into stunning, functional websites and applications.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="sparkles"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i data-lucide="mail"></i>
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <!-- [REPLACE YOUR PHOTO HERE - put in /images/profile.png] -->
+                    <img src="images/profile.png" alt="Profile" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+       ═══════════════════════════════════════════════════════════════
+       ABOUT SECTION - CENTERED & COMPACT
+       Tell your story and showcase your skills.
+       ═══════════════════════════════════════════════════════════════
+    -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content reveal">
+                <div class="about-intro">
+                    <div class="section-subtitle">About Me</div>
+                    <h2>Crafting Digital Excellence</h2>
+
+                    <!-- [TELL YOUR STORY HERE] -->
+                    <p>
+                        Hello! I'm a passionate student exploring the exciting world of AI and Web Development.
+                        I believe that technology should be both functional and beautiful. My journey started with
+                        a simple curiosity about how websites work, and now I'm creating digital experiences that
+                        make people smile. When I'm not coding, you'll find me exploring new design trends or
+                        learning about the latest in artificial intelligence.
+                    </p>
+                </div>
+
+                <div class="skills-container">
+                    <h3>My Skills & Technologies</h3>
+
+                    <!-- [ADD OR REMOVE SKILLS HERE] -->
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <i data-lucide="code"></i>
+                            HTML/CSS
+                        </div>
+                        <div class="skill-item">
+                            <i data-lucide="file-code"></i>
+                            JavaScript
+                        </div>
+                        <div class="skill-item">
+                            <i data-lucide="terminal"></i>
+                            Python
+                        </div>
+                        <div class="skill-item">
+                            <i data-lucide="brain"></i>
+                            AI/ML Basics
+                        </div>
+                        <div class="skill-item">
+                            <i data-lucide="figma"></i>
+                            UI Design
+                        </div>
+                        <div class="skill-item">
+                            <i data-lucide="git-branch"></i>
+                            Git/GitHub
+                        </div>
+                        <div class="skill-item">
+                            <i data-lucide="database"></i>
+                            SQL Basics
+                        </div>
+                        <div class="skill-item">
+                            <i data-lucide="lightbulb"></i>
+                            Problem Solving
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+       ═══════════════════════════════════════════════════════════════
+       EXPERIENCE SECTION
+       Show your journey and achievements.
+       ═══════════════════════════════════════════════════════════════
+    -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-subtitle">My Journey</div>
+                <h2 class="section-title">Experience & Education</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- [ADD OR EDIT YOUR EXPERIENCE HERE] -->
+
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h4>Computer Science Student</h4>
+                        <p>Studying programming, algorithms, and machine learning fundamentals at university.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h4>Web Development Bootcamp</h4>
+                        <p>Completed an intensive program covering HTML, CSS, JavaScript, and React basics.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022</span>
+                        <h4>First Coding Project</h4>
+                        <p>Built my first personal website and discovered my passion for web development.</p>
+                    </div>
+                </div>
+
+                <!-- [COPY A timeline-item BLOCK TO ADD MORE EXPERIENCES] -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+       ═══════════════════════════════════════════════════════════════
+       RESEARCH SECTION
+       Showcase your academic research and publications.
+       ═══════════════════════════════════════════════════════════════
+    -->
+    <section class="research-section" id="research">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-subtitle">Academic Work</div>
+                <h2 class="section-title">Research & Publications</h2>
+            </div>
+
+            <div class="research-grid">
+                <!-- [RESEARCH 1] -->
+                <div class="glass-card research-card reveal">
+                    <div class="research-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="research-content">
+                        <span class="research-type">Conference Paper</span>
+                        <h3>AI-Driven User Experience Analysis in Modern Web Applications</h3>
+                        <p class="research-authors">Your Name, Supervisor Name</p>
+                        <p class="research-venue">International Conference on Human-Computer Interaction, 2024</p>
+                        <div class="research-links">
+                            <a href="#" class="research-link">
+                                <i data-lucide="file-text"></i> PDF
+                            </a>
+                            <a href="#" class="research-link">
+                                <i data-lucide="external-link"></i> DOI
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- [RESEARCH 2] -->
+                <div class="glass-card research-card reveal">
+                    <div class="research-icon">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <div class="research-content">
+                        <span class="research-type">Thesis</span>
+                        <h3>Machine Learning Applications in Personalized Education Platforms</h3>
+                        <p class="research-authors">Your Name</p>
+                        <p class="research-venue">Bachelor's Thesis, University Name, 2024</p>
+                        <div class="research-links">
+                            <a href="#" class="research-link">
+                                <i data-lucide="file-text"></i> PDF
+                            </a>
+                            <a href="#" class="research-link">
+                                <i data-lucide="github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- [RESEARCH 3] -->
+                <div class="glass-card research-card reveal">
+                    <div class="research-icon">
+                        <i data-lucide="flask-conical"></i>
+                    </div>
+                    <div class="research-content">
+                        <span class="research-type">Research Project</span>
+                        <h3>Analyzing Social Media Trends Using Natural Language Processing</h3>
+                        <p class="research-authors">Your Name, Team Members</p>
+                        <p class="research-venue">University Research Lab, 2023</p>
+                        <div class="research-links">
+                            <a href="#" class="research-link">
+                                <i data-lucide="presentation"></i> Slides
+                            </a>
+                            <a href="#" class="research-link">
+                                <i data-lucide="github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- [ADD NEW RESEARCH HERE - COPY A research-card BLOCK] -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+       ═══════════════════════════════════════════════════════════════
+       PROJECTS SECTION
+       Showcase your best work with stunning visuals.
+       ═══════════════════════════════════════════════════════════════
+    -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-subtitle">My Work</div>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <!-- [PROJECT 1] -->
+                <div class="glass-card project-card reveal">
+                    <div class="project-img-wrapper">
+                        <!-- [REPLACE PROJECT IMAGE - put in /images/project1.png] -->
+                        <img src="images/project1.png" alt="Smart Dashboard" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Web Design</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Dashboard</span>
+                    </div>
+                    <h3>Smart Dashboard</h3>
+                    <p>An AI-powered dashboard for tracking learning progress and managing daily tasks efficiently.</p>
+                </div>
+
+                <!-- [PROJECT 2] -->
+                <div class="glass-card project-card reveal">
+                    <div class="project-img-wrapper">
+                        <!-- [REPLACE PROJECT IMAGE - put in /images/project2.png] -->
+                        <img src="images/project2.png" alt="Style Guide App" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Mobile</span>
+                        <span class="tag">Fashion</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <h3>Style Guide App</h3>
+                    <p>A mobile application concept that helps users organize their wardrobe using AI recommendations.
+                    </p>
+                </div>
+
+                <!-- [ADD NEW PROJECT HERE - COPY A project-card BLOCK] -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+       ═══════════════════════════════════════════════════════════════
+       CONTACT SECTION
+       Let people reach you.
+       ═══════════════════════════════════════════════════════════════
+    -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <div class="section-subtitle">Get in Touch</div>
+                    <h2>Let's Work Together</h2>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas,
+                        or opportunities to be part of your vision.
+                    </p>
+
+                    <div class="contact-methods">
+                        <!-- [CHANGE YOUR EMAIL HERE] -->
+                        <a href="mailto:hello@example.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <span>hello@example.com</span>
+                            </div>
+                        </a>
+
+                        <!-- [CHANGE YOUR LOCATION HERE] -->
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <span>London, UK</span>
+                            </div>
+                        </div>
+
+                        <!-- [CHANGE YOUR LINKEDIN HERE] -->
+                        <a href="#" class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>LinkedIn</h4>
+                                <span>Connect with me</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i data-lucide="send"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+       ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- [CHANGE YOUR SOCIAL LINKS HERE] -->
+                <div class="social-links">
+                    <a href="#" class="social-link" title="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Crafted with ❤️ for AI Workshop | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" title="Scroll to Top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
